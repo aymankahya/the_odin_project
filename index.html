@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Learning | Ayman Kahya</title>
+    </head>
+
+    <body>
+        <!--
+        Headings start from <h1> to <h6> they are structured based on level 
+        (from the highest to the lowest)    
+        -->
+        <h1>Heading 1 : Hello World !</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+
+        <!--
+        <strong> is used for making text bold (done in CSS also)
+        <em> is used for making text italic
+        ============================    
+        // Nesting and Indentation //
+        ============================
+        Indenting an element within another element creates a children and parent
+        relationship
+            - The nested element = the child
+            - The nested within element = the parent
+            - Elements at the same level in a child/parent relationship = siblings
+        -->
+        <p> Welcome to my 
+            <em> <!-- Parent element of <strong> and child element of <p> -->
+                <strong>Fullstack learning journey</strong>
+            </em> 
+             :) Let's do this !
+        </p>
+
+        <!--
+        ============================    
+        //         Lists          //
+        ============================
+            - Unordered lists = basically a bulleted list :p (when order is meaningless)
+            - Ordered lists = a numbered list :D (when order is meaningful)
+            - Description lists = Description lists are used to outline multiple terms and 
+                                  their descriptions, as in a glossary, for example.
+        
+        Some attributes to be used with <ul> and <ol> :
+            - <ul compact> : this attribute is deprecated (no longer supported by the major
+                internet browsers)
+            - <ul type = "circle"> : used to define the bullet style for the unordered list
+            - <ol reversed>
+            - <ol start="0">
+            - <ol type="A">
+            - <li value="4"> 
+
+        More ressources on lists here : https://learn.shayhowe.com/html-css/creating-lists/
+        -->
+        <h3>Unordered list</h3>
+        <ul compact>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+
+        <h3>Ordered list</h3>
+        <ol>
+            <li>Item 1</li>
+            <li value="4">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+
+        <h3>Description list</h3>
+        <dl>
+            <dt>Glossary</dt>
+            <dd><em><strong>Definition : </strong></em>an alphabetical list of words relating to a specific subject, 
+                text, or dialect, with explanations; a brief dictionary.</dd>
+        </dl>
+
+      
+         <!--
+        ============================    
+        //    Links and Images    //
+        ============================
+        The anchor element is used to create a link in HTML 
+            => <a href="url or destination file">link here</a>
+               *href (HYperlink reference)
+
+        Generally, there are two kinds of links we usually create :
+            - Links to pages on other websites (Absolute links)
+                * Made up of the following : protocol://domain/path
+            - Links to pages located on our own websites (Relative links)
+                * Only include the file path to other pages
+        
+        To display an image in HTML we use the <img> element (this element
+        doesn't have a closing tag)
+         -->
+        
+
+         <p>
+            <a href="links_and_images/homepage.html">Click here to go to Homepage</a>
+         </p>
+         
+         <p>
+            <a href="https://google.com">Click here to go Google</a>
+         </p>
+
+         <p>JPEG image :</p>
+         <img src="links_and_images/mochi.jpeg" alt="JPEG Image">
+         <p>GIF image :</p>
+         <img src="links_and_images/mochi.gif" alt="GIF Image>"
+    </body>
+</html>
